@@ -1,4 +1,4 @@
-module.exports = () => {
+module.exports = function PDefer () {
 	var ret = {};
 
 	ret.promise = new Promise(function (resolve, reject) {
