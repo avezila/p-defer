@@ -1,8 +1,7 @@
-'use strict';
 module.exports = () => {
-	const ret = {};
+	var ret = {};
 
-	ret.promise = new Promise((resolve, reject) => {
+	ret.promise = new Promise(function (resolve, reject) {
 		ret.resolve = resolve;
 		ret.reject = reject;
 	});
